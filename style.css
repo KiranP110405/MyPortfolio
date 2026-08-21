@@ -1,3 +1,110 @@
 body {
-    margin: none;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+#heading {
+    margin-left: 30px;
+}
+
+#navbar {
+    margin-right: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    background-color: grey;
+    padding: 70px;
+}
+
+#hero-content {
+    font-size: 2rem;
+}
+
+#hero-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#hero-image img {
+    width: 75%;
+    max-width: 600px;
+    height: auto;
+}
+
+#about-me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 200px;
+
+    padding: 70px;
+}
+
+#about-me-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#about-me-image img {
+    width: 75%;
+    max-width: 600px;
+    height: auto;
+}
+
+#skills-section {
+    background-color: grey;
+    padding: 20px;
+    color: white;
+}
+
+#skills-heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#skills-list {
+    margin: 20px;
+}
+
+#skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+#selected-work-section {
+    margin-top: 70px;
+}
+
+#my-work {
+    text-align: center;
+}
+
+#my-work-list {
+    margin: 50px;
+}
+
+#my-work-list-choices {
+    display: flex;
+    justify-content: space-between;
 }
