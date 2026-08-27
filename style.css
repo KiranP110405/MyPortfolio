@@ -31,6 +31,11 @@ header {
     margin-right: 30px;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -53,9 +58,6 @@ ul {
 
     position: relative;
 }
-
-
-/* LEFT SIDE */
 
 .hero {
     display: flex;
@@ -263,7 +265,7 @@ ul {
 }
 
 .about-label {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #3157FF;
     text-align: center;
     letter-spacing: 5px;
