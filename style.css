@@ -440,7 +440,7 @@ ul {
     order: 1;
 }
 
-.project-site {
+/* .project-site {
     width: 100%;
     height: 500px;
 
@@ -454,6 +454,25 @@ ul {
     height: 100%;
     border: none;
     border-radius: 15px;
+} */
+
+.project-site {
+    width: 100%;
+    height: 520px;
+
+    overflow: hidden;
+    border-radius: 15px;
+    background: #f4f4f4;
+}
+
+.project-site iframe {
+    width: 125%;
+    height: 650px;
+
+    transform: scale(0.8);
+    transform-origin: top left;
+
+    border: none;
 }
 
 .project-text {
