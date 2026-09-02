@@ -415,6 +415,7 @@ ul {
     letter-spacing: 2px;
 }
 
+
 .project {
     background-color: white;
     padding: 40px;
@@ -422,13 +423,14 @@ ul {
 
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
-    align-items: center;
+    align-items: start;
     gap: 60px;
 
     margin: 40px 20px;
 
     box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.35);
 }
+
 
 
 /* Second project swaps sides */
@@ -463,6 +465,10 @@ ul {
     overflow: hidden;
     border-radius: 15px;
     background: #f4f4f4;
+
+    position: sticky;
+    top: 120px;
+    align-self: start;
 }
 
 .project-site iframe {
