@@ -706,13 +706,12 @@ ul {
 
 .reveal {
     opacity: 0;
-    /* the element is invisible */
-    transform: translateY(50px);
-    /* moves it 50px down */
-    transition: opacity 2s ease, transform 2s ease;
+    transform: translateY(60px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
-/* changes to this when the javascript activates */
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
