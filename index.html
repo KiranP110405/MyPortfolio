@@ -9,14 +9,15 @@
 </head>
 
 <body>
-    <header>
+    <header class="reveal">
         <h3 id="heading">KIRAN PATEL</h3>
         <nav id="navbar">
             <ul>
-                <li><a class="nav-link" href="#">WORK</a></li>
-                <li><a class="nav-link href=" #">ABOUT</a></li>
-                <li><a class="nav-link href=" #">SKILLS</a></li>
-                <li><a class="nav-link href=" #">CONTACT</a></li>
+                <li><a class="nav-link" href="#selected-work-section">PROJECTS</a></li>
+                <li><a class="nav-link" href="#skills-section">SKLLS</a></li>
+                <li><a class="nav-link" href="#about-me">ABOUT ME</a></li>
+                <li><a class="nav-link" href="#lets-work-together">CONTACT</a></li>
+
             </ul>
         </nav>
     </header>
@@ -24,7 +25,7 @@
 
         <section id="hero-section">
 
-            <div class="hero">
+            <div class="hero reveal">
 
                 <p class="hero-label">
                     <span></span>
@@ -45,11 +46,11 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#work" class="hero-button primary">
+                    <a href="#selected-work-section" class="hero-button primary">
                         View my work →
                     </a>
 
-                    <a href="#contact" class="hero-button">
+                    <a href="#lets-work-together" class="hero-button">
                         Contact me
                     </a>
                 </div>
@@ -57,7 +58,7 @@
             </div>
 
 
-            <div class="hero-visual">
+            <div class="hero-visual reveal">
 
                 <div class="code-icon">
                     <span>&lt;</span>
@@ -67,7 +68,7 @@
             </div>
 
 
-            <div class="tech-stack">
+            <div class="tech-stack reveal">
                 <span class="tech-title">TECH STACK</span>
 
                 <span>HTML</span>
@@ -89,14 +90,14 @@
 
         <section id="about-me">
 
-            <h3 class="about-label">ABOUT ME</h3>
+            <h3 class="about-label reveal">ABOUT ME</h3>
 
-            <div id="about-me-grid">
+            <div id="about-me-grid" class="reveal">
                 <div id="about-me-image">
                     <img src="images /Uni-image.jpeg" alt="">
                 </div>
 
-                <div id="about-me-content">
+                <div id="about-me-content reveal">
                     <h2>Who am I?</h2>
                     <p>My name is <strong>Kiran Patel</strong>, and I'm a Creative Computing graduate with a strong
                         interest
@@ -161,37 +162,37 @@
         </section>
 
         <section id="skills-section">
-            <p id="skills-heading-one">WHAT I WORK WITH</p>
-            <h2 id="skills-heading">My Skills</h2>
+            <p id="skills-heading-one" class="reveal">WHAT I WORK WITH</p>
+            <h2 id="skills-heading" class="reveal">My Skills</h2>
 
             <div id="skills-list">
 
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-icon">&lt;/&gt;</div>
                     <h3>HTML</h3>
                     <p>Semantic markup</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-icon">{ }</div>
                     <h3>CSS</h3>
                     <p>Responsive design</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-icon">JS</div>
                     <h3>JavaScript</h3>
                     <p>Interactive experiences</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-icon">Git</div>
                     <h3>Git</h3>
                     <p>Version control</p>
                 </div>
 
-                <div class="skill-item">
+                <div class="skill-item reveal">
                     <div class="skill-icon">✦</div>
                     <h3>Visual Design</h3>
                     <p>UI & wireframing</p>
@@ -202,22 +203,22 @@
         </section>
 
         <section id="selected-work-section">
-            <h1 id="my-work">My Work</h1>
-            <p id="subheading-text">A selection of projects I've worked on, showcasing mu skills <br>
+            <h1 id="my-work" class="reveal">My Work</h1>
+            <p id="subheading-text" class="reveal">A selection of projects I've worked on, showcasing mu skills <br>
                 in front-end development, design and problem solving.
             </p>
 
             <div class="project">
 
                 <!-- LEFT SIDE -->
-                <div class="project-site">
+                <div class="project-site reveal">
                     <iframe src="https://kiranp110405.github.io/MIH_WEBSITE/" title="MIH Website">
                     </iframe>
                 </div>
 
 
                 <!-- RIGHT SIDE -->
-                <div class="project-text">
+                <div class="project-text reveal">
 
                     <h3 class="project-number">01</h3>
 
@@ -358,12 +359,12 @@
 
             <div class="project project-reverse">
 
-                <div class="project-site">
+                <div class="project-site reveal">
                     <iframe src="https://creative-project-1.onrender.com" title="Digital Doppelgänger">
                     </iframe>
                 </div>
 
-                <div class="project-text">
+                <div class="project-text reveal">
 
                     <h3 class="project-number">02</h3>
                     <h2>Digital Doppelgänger</h2>
@@ -517,12 +518,12 @@
 
             <div class="project">
 
-                <div class="project-site">
+                <div class="project-site reveal">
                     <iframe src="https://floridium.onrender.com" title="Floridium Website">
                     </iframe>
                 </div>
 
-                <div class="project-text">
+                <div class="project-text reveal">
 
                     <h3 class="project-number">03</h3>
                     <h2>FLORIDIUM</h2>
@@ -680,7 +681,7 @@
 
         <section id="lets-work-together">
 
-            <div class="contact-left">
+            <div class="contact-left reveal">
 
                 <h3>GET IN TOUCH</h3>
 
@@ -706,7 +707,7 @@
             </div>
 
 
-            <div class="contact-card">
+            <div class="contact-card reveal">
 
                 <p>HAVE SOMETHING IN MIND?</p>
 
@@ -733,6 +734,8 @@
     <footer>
         <p>2026 KIRAN PATEL</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

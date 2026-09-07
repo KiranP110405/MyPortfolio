@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     background-color: #F4F1EA;
@@ -700,9 +704,742 @@ ul {
     color: #111;
 }
 
+.reveal {
+    opacity: 0;
+    /* the element is invisible */
+    transform: translateY(50px);
+    /* moves it 50px down */
+    transition: opacity 2s ease, transform 2s ease;
+}
+
+/* changes to this when the javascript activates */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 footer {
     background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
+}
+
+
+/* =========================================================
+   SMALL LAPTOP / TABLET LANDSCAPE
+   1200px and below
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    /* HERO */
+
+    #hero-section {
+        grid-template-columns: 1.5fr 1fr;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .code-icon {
+        font-size: 5rem;
+    }
+
+    .code-icon span:nth-child(2) {
+        font-size: 6.5rem;
+    }
+
+
+    /* ABOUT */
+
+    #about-me {
+        padding: 60px 50px;
+    }
+
+    #about-me-grid {
+        gap: 60px;
+    }
+
+    #about-me-content h2 {
+        font-size: 3.5rem;
+    }
+
+
+    /* SKILLS */
+
+    #skills-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* PROJECTS */
+
+    .project {
+        gap: 40px;
+        padding: 35px;
+    }
+
+
+    /* CONTACT */
+
+    #lets-work-together {
+        padding: 80px 50px;
+        gap: 70px;
+    }
+
+    .contact-left>h2 {
+        font-size: 3.5rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   TABLET
+   900px and below
+========================================================= */
+
+/* =========================================================
+   TABLET + MOBILE FIX
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* Prevent padding from making elements wider than screen */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* HERO */
+
+    #hero-section {
+        width: 100%;
+        max-width: 100%;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+
+        min-height: auto;
+
+        padding: 130px 30px 40px;
+    }
+
+    .hero {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .tech-stack {
+        width: 100%;
+        min-width: 0;
+        flex-wrap: wrap;
+    }
+
+
+    /* ABOUT */
+
+    #about-me {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #about-me-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #about-me-content,
+    #about-me-image {
+        width: 100%;
+        min-width: 0;
+    }
+
+
+    /* SKILLS */
+
+    #skills-section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #skills-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* PROJECTS */
+
+    #selected-work-section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .project {
+        width: 100%;
+        max-width: 100%;
+
+        grid-template-columns: minmax(0, 1fr);
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-site,
+    .project-text {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-site {
+        position: relative;
+        top: auto;
+    }
+
+    .project-reverse .project-site {
+        order: 1;
+    }
+
+    .project-reverse .project-text {
+        order: 2;
+    }
+
+
+    /* CONTACT */
+
+    #lets-work-together {
+        width: 100%;
+        max-width: 100%;
+
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .contact-left,
+    .contact-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-role {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        width: 100%;
+
+        gap: 12px 20px;
+
+        padding: 0;
+        margin: 0;
+    }
+
+    .project-role li {
+        min-width: 0;
+        line-height: 1.4;
+    }
+
+}
+
+
+
+/* =========================================================
+   LARGE MOBILE / PORTRAIT TABLET
+   768px and below
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        padding: 10px 15px;
+    }
+
+    #heading {
+        margin-left: 0;
+    }
+
+    #navbar {
+        margin-right: 0;
+    }
+
+    header ul {
+        gap: 15px;
+    }
+
+
+    /* HERO */
+
+    #hero-section {
+        padding:
+            120px 25px 35px;
+    }
+
+    .hero h2 {
+        font-size: clamp(3.5rem, 12vw, 6rem);
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .hero-visual {
+        min-height: 220px;
+    }
+
+    .tech-stack {
+        gap: 15px;
+    }
+
+    .tech-title {
+        padding-right: 15px;
+    }
+
+
+    /* ABOUT */
+
+    #about-me {
+        padding: 55px 30px;
+    }
+
+    .about-label {
+        font-size: 1.6rem;
+    }
+
+    #about-me-content h2 {
+        font-size: 2.8rem;
+    }
+
+    #about-me-image {
+        width: 90%;
+    }
+
+
+    /* SKILLS */
+
+    #skills-heading {
+        font-size: 2.5rem;
+    }
+
+    #skills-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 20px 5px;
+    }
+
+    .skill-item {
+        padding: 30px 15px;
+    }
+
+
+    /* PROJECTS */
+
+    #selected-work-section {
+        padding: 15px;
+    }
+
+    .project {
+        padding: 30px;
+        margin: 30px 0;
+    }
+
+    .project-site {
+        height: 430px;
+    }
+
+    /*
+       Your iframe is deliberately 125% wide and scaled to 80%.
+       Keep the same technique, but reduce its height.
+    */
+
+    .project-site iframe {
+        height: 540px;
+    }
+
+    .project-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .ul-project-list {
+        column-gap: 20px;
+    }
+
+
+    /* CONTACT */
+
+    #lets-work-together {
+        padding: 60px 30px;
+    }
+
+    .contact-left>h2 {
+        font-size: 3rem;
+    }
+
+    .contact-card {
+        padding: 35px;
+    }
+
+    .contact-card h3 {
+        font-size: 2.2rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+   600px and below
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    header {
+        width: 100%;
+        max-width: 100%;
+
+        flex-direction: column;
+
+        padding: 10px 15px;
+
+        gap: 8px;
+    }
+
+    #heading {
+        margin: 0;
+    }
+
+    #navbar {
+        margin: 0;
+    }
+
+    header ul {
+        margin: 5px 0;
+        gap: 18px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    /* HERO */
+
+    #hero-section {
+        width: 100%;
+
+        padding: 145px 20px 35px;
+
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hero {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero h2 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+
+        max-width: 100%;
+
+        overflow-wrap: break-word;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-height: 180px;
+    }
+
+    .code-icon {
+        font-size: 3rem;
+        gap: 10px;
+    }
+
+    .code-icon span:nth-child(2) {
+        font-size: 4rem;
+    }
+
+    .tech-stack {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+
+    /* ABOUT */
+
+    #about-me {
+        padding: 50px 20px;
+    }
+
+    #about-me-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #about-me-content h2 {
+        font-size: 2.5rem;
+    }
+
+    #about-me-image {
+        width: calc(100% - 15px);
+
+        margin-left: 15px;
+    }
+
+
+    /* SKILLS */
+
+    #skills-section {
+        padding: 30px 15px;
+    }
+
+    #skills-list {
+        margin: 20px 0;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 15px;
+    }
+
+
+    /* PROJECTS */
+
+    #selected-work-section {
+        padding: 15px;
+    }
+
+    .project {
+        width: 100%;
+
+        padding: 25px;
+
+        margin: 30px 0;
+
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .project-site {
+        width: 100%;
+        height: 360px;
+    }
+
+    .project-site iframe {
+        height: 450px;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-text p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .ul-project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .view-work {
+        width: 100%;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* CONTACT */
+
+    #lets-work-together {
+        padding: 50px 20px;
+
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 40px;
+    }
+
+    .contact-left>h2 {
+        font-size: 2.6rem;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px and below
+========================================================= */
+
+@media (max-width: 480px) {
+
+    #hero-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .hero h2 {
+        font-size: clamp(2.6rem, 13vw, 3.7rem);
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-button {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    #about-me {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    #skills-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project {
+        padding: 20px;
+    }
+
+    .project-site {
+        height: 300px;
+    }
+
+
+    #lets-work-together {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    .contact-email {
+        overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 480px) {
+
+        .project-role {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px 15px;
+        }
+
+        .project-role li {
+            font-size: 0.95rem;
+        }
+
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   375px and below
+========================================================= */
+
+@media (max-width: 375px) {
+
+    header ul {
+        gap: 10px;
+        font-size: 0.78rem;
+    }
+
+    #hero-section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero h2 {
+        font-size: 2.7rem;
+    }
+
+    .hero-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #about-me {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #about-me-content h2 {
+        font-size: 2rem;
+    }
+
+    .project {
+        padding: 17px;
+    }
+
+    .project-site {
+        height: 260px;
+    }
+
+    .project-site iframe {
+        height: 325px;
+    }
+
+    #lets-work-together {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contact-left>h2 {
+        font-size: 2.1rem;
+    }
+
+    .project-role {
+        grid-template-columns: 1fr;
+    }
+
 }
