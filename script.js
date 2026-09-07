@@ -1,15 +1,17 @@
-const revealElements = document.querySelectorAll(".reveal"); //finds every html element with the reveal class
+const revealElements = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver( //asks if this element has entered the view of the users screen
+const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("active"); //targests the active css for reveal once it is visible on the users screen
+        entry.target.classList.add("active");
+
+        observer.unobserve(entry.target);
       }
     });
   },
   {
-    threshold: 0.2,
+    threshold: 0.05,
   },
 );
 
